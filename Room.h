@@ -7,12 +7,12 @@ using namespace std;
 class Room
 {
 private:
-	bool LightMode;
+	bool LightMode=false;
 
 public:
 	
 	string Username;
-	Room();
+	Room() {};
 	Room(string _roomname)
 	{
 		Username = _roomname;

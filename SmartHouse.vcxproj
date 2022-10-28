@@ -142,10 +142,12 @@
     <ClCompile Include="Kitchen.cpp" />
     <ClCompile Include="Room.cpp" />
     <ClCompile Include="SmartHouse.cpp" />
+    <ClCompile Include="Timer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Kitchen.h" />
     <ClInclude Include="Room.h" />
+    <ClInclude Include="Timer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

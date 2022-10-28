@@ -1,2 +1,29 @@
 ﻿  Kitchen.cpp
-  SmartHouse.vcxproj -> C:\Users\Roii\source\repos\SmartHouse\Debug\SmartHouse.exe
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\thread(55,14): error C2672: 'invoke': no matching overloaded function found
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\thread(61): message : see reference to function template instantiation 'unsigned int std::thread::_Invoke<_Tuple,0,1,2>(void *) noexcept' being compiled
+          with
+          [
+              _Tuple=_Tuple
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\thread(66): message : see reference to function template instantiation 'unsigned int (__stdcall *std::thread::_Get_invoke<_Tuple,0,1,2>(std::integer_sequence<size_t,0,1,2>) noexcept)(void *)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\thread(89): message : see reference to function template instantiation 'void std::thread::_Start<_Ty,int&,int&>(_Fn &&,int &,int &)' being compiled
+          with
+          [
+              _Ty=void (__thiscall Timer::* )(int,int),
+              _Fn=void (__thiscall Timer::* )(int,int)
+          ]
+C:\Users\Roii\source\repos\SmartHouse\SmartHouse\Kitchen.cpp(12): message : see reference to function template instantiation 'std::thread::thread<void(__thiscall Timer::* )(int,int),int&,int&,0>(_Fn &&,int &,int &)' being compiled
+          with
+          [
+              _Fn=void (__thiscall Timer::* )(int,int)
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\thread(51,5): error C2893: Failed to specialize function template 'unknown-type std::invoke(_Callable &&,_Ty1 &&,_Types2 &&...) noexcept(<expr>)'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\type_traits(1528): message : see declaration of 'std::invoke'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\thread(51,5): message : With the following template arguments:
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\thread(51,5): message : '_Callable=void (__thiscall Timer::* )(int,int)'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\thread(51,5): message : '_Ty1=int'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\thread(51,5): message : '_Types2={int}'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\thread(51,5): error C2780: 'unknown-type std::invoke(_Callable &&) noexcept(<expr>)': expects 1 arguments - 3 provided
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\type_traits(1522): message : see declaration of 'std::invoke'
+  Timer.cpp
+  Generating Code...
