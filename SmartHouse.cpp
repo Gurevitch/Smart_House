@@ -9,7 +9,7 @@ int main()
     cout << "Hello World!\n";
     
     Kitchen room1("Roii");
-    room1.UseOven(true, 170, 2);
+    room1.UseOven(170);
 
 }
 

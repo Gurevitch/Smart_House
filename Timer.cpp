@@ -33,6 +33,8 @@ void Timer::TimerForwards()
 		}
 		Sleep(1);
 	}
+	cout << "******************* \n time ended!" << endl << "Stoped at :" << Thours << " : "<<Tminutes <<endl
+		<< "********************" << endl;
 }
 void Timer::TimerBackWards()
 {
@@ -62,24 +64,4 @@ void Timer::TimerBackWards()
 	system("cls");
 	cout << "******************* \n time ended!" << endl << "Last for :" << Ttime<<endl
 		<<"********************"<<endl;
-}
-void Timer::GetTime(int hours , int minutes, int seconds)
-{
-	cout << "the time remain is:" << endl << hours - Thours << " : " << minutes - Tminutes << " : " << seconds - Tseconds << endl;
-}
-void Timer::start(const Interval& interval, const Timeout& timeout)
-{
-	th = thread([=]()
-	{
-		while (running == true)
-		{
-			this_thread::sleep_for(interval);
-			timeout();
-		}
-	});
-	th.join();
-}
-void Timer::stop()
-{
-	running = false;
 }
