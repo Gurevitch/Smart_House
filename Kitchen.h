@@ -2,6 +2,9 @@
 #include "Room.h"
 #include <iostream>
 #include "Timer.h"
+#include "windows.h"
+#include <string.h>
+#include <thread>
 using namespace std;
 class Kitchen :public Room
 {
@@ -10,11 +13,11 @@ private:
 	string UserKitchen;
 	bool Oven=false;
 	int Tempreture;
-	int Timer;
 	bool LightMode = false;
 	int KitchHour = 0;
 	int kitchMinutes = 0;
 	int KitchSeconds = 0;
+
 
 public:
 	Kitchen(string _Username)

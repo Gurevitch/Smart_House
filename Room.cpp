@@ -4,6 +4,5 @@ string Room::LightConverter(bool LightMode)
 {
     if (LightMode)
         return "turn on";
-    else
-        return "turn off";   
+    return "turn off";   
 }

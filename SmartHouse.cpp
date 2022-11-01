@@ -1,17 +1,18 @@
 #include <iostream>
 #include "Room.h"
 #include "Kitchen.h"
+#include <thread>
 using namespace std;
+
 int main()
 {
     cout << "Hello World!\n";
-
+    
     Kitchen room1("Roii");
-    cout <<room1.GetRoomName()<<endl;
-    room1.SetLightMode(true);
-    cout <<room1.GetLightMode() << endl;
+    room1.UseOven(true, 170, 2);
 
 }
+
 
 /*
 TBD

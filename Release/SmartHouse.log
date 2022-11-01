@@ -1,0 +1,10 @@
+﻿  FrontDoor.cpp
+  Kitchen.cpp
+  Room.cpp
+  SmartHouse.cpp
+  Timer.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 118 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  SmartHouse.vcxproj -> C:\Users\Roii\source\repos\SmartHouse\Release\SmartHouse.exe

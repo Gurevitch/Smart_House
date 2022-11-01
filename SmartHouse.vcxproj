@@ -139,12 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FrontDoor.cpp" />
     <ClCompile Include="Kitchen.cpp" />
     <ClCompile Include="Room.cpp" />
     <ClCompile Include="SmartHouse.cpp" />
     <ClCompile Include="Timer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FrontDoor.h" />
+    <ClInclude Include="House.h" />
     <ClInclude Include="Kitchen.h" />
     <ClInclude Include="Room.h" />
     <ClInclude Include="Timer.h" />
