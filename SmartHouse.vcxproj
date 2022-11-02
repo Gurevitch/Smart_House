@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Elevator.cpp" />
     <ClCompile Include="FrontDoor.cpp" />
     <ClCompile Include="Kitchen.cpp" />
     <ClCompile Include="Room.cpp" />
@@ -146,6 +147,7 @@
     <ClCompile Include="Timer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Elevator.h" />
     <ClInclude Include="FrontDoor.h" />
     <ClInclude Include="House.h" />
     <ClInclude Include="Kitchen.h" />

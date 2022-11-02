@@ -10,6 +10,7 @@ void Timer::TimerForwards()
 	cin >> minutes;
 	cout << "Enter hours::  ";
 	cin >> hours;
+
 	while (Thours <= hours && Tminutes < minutes )
 	{
 		system("cls");

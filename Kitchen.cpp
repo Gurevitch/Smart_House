@@ -16,11 +16,20 @@ void Kitchen::CheckTimer()
 }
 void Kitchen::UseOven(int _temp)
 {
-	TurnOvenOn();
-	cout << " turning the oven on, the temp will rise to " << Tempreture << "now choose to timer for the oven" << endl;
-	Tempreture = _temp;
-	CheckTimer();
-
+	try {
+		if (_temp > 50)
+		{
+			TurnOvenOn();
+			cout << " turning the oven on, the temp will rise to " << _temp << "now choose to timer for the oven" << endl;
+			CheckTimer();
+		}
+		else
+			throw 99;
+	}
+	catch (int x)
+	{
+		cout << "There is no point in turn on the oven for this, error :" << x << endl;
+	}
 }
 void Kitchen::TurnOvenOn()
 {

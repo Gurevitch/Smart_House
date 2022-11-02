@@ -12,7 +12,6 @@ private:
 
 	string UserKitchen;
 	bool Oven=false;
-	int Tempreture;
 	bool LightMode = false;
 
 
