@@ -2,14 +2,45 @@
 #include "Room.h"
 #include "Kitchen.h"
 #include <thread>
+#include "LivingRoom.h"
+#include "Elevator.h"
 using namespace std;
 
 int main()
 {
-    cout << "Hello World!\n";
-    
-    Kitchen room1("Roii");
-    room1.UseOven(170);
+	char room;
+	int quit = 0;
+	cout << "hello there," << endl;
+	while (!quit)
+	{
+		//need to add lines.
+		cin >> room;
+		switch (room)
+		{
+			case 'k'://kitchen
+			{
+				Kitchen* l = Kitchen::getInstance(); // Ok
+				break;
+			}
+			case 'l'://livingroom
+			{
+				LivingRoom* l = LivingRoom::getInstance(); // Ok
+				break;
+			}
+			case'e'://elevator
+			{
+				Elevator* e = Elevator::getInstance(); // Ok
+			}
+			case'q':
+				quit = 1;
+				break;
+			default:
+				LivingRoom* l = LivingRoom::getInstance(); // should be the same unit as the other option4
+
+		}
+	}
+
+
 
 }
 
@@ -17,10 +48,8 @@ int main()
 /*
 TBD
 Rooms:
--kitchen:light,name,oven
 -livingroom:name,light,TV
--frontdoor:lock
+
 
 -start func to run all the rooms together
-front GUI
 */

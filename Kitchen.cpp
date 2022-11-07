@@ -2,15 +2,28 @@
 
 using namespace std;
 
+
+/* Null, because instance will be initialized on demand. */
+Kitchen* Kitchen::instance = 0;
+//Ctor
+Kitchen::Kitchen()
+{}
+
+Kitchen* Kitchen::getInstance()
+{
+	if (instance == 0)
+	{
+		instance = new Kitchen();
+	}
+
+	return instance;
+}
 void Kitchen::CheckTimer()
 {
 	cout << "Prepering oven"<<endl;
 	Timer tmr1;
 	std::thread first(&Timer::TimerBackWards, ref(tmr1));
 	first.join();
-	thread second(&(Timer::TimerForwards), ref(tmr1));
-	second.join();
-	
 
 	TurnOvenOff();
 }

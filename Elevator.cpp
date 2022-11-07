@@ -1,6 +1,35 @@
 #include "Elevator.h"
 #include <iostream>
 #include "windows.h"
+#include "Enum.h"
+
+/* Null, because instance will be initialized on demand. */
+Elevator* Elevator::instance = 0;
+//Ctor
+Elevator::Elevator()
+{}
+
+Elevator* Elevator::getInstance()
+{
+	if (instance == 0)
+	{
+		instance = new Elevator();
+	}
+
+	return instance;
+}
+
+
+void Elevator::GetFloor(short floor)
+{
+	bool status;
+	cout << "elevator is at floor :" << floor << endl << " Do you want to call the elevator?"<<endl;
+	cout << " choose yes or no" << endl;
+	cin >> status;
+	if (status == CallForElevator::yes)
+		CallElevator(floor, 1);
+		
+}
 void Elevator::CallElevator(short Elevatorfloor,short Roomfloor)
 {
 	try {

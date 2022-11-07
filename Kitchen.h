@@ -13,13 +13,19 @@ private:
 	string UserKitchen;
 	bool Oven=false;
 	bool LightMode = false;
+	const short KitchenFloor = 1;
+	
+	/* Here will be the instance stored. */
+	static Kitchen* instance;
 
-
+	/* Private constructor to prevent instancing. */
+	Kitchen();
 public:
-	Kitchen(string _Username)
-	{
-		UserKitchen = _Username+"'s Kitchen";
-	}
+
+	
+	/* Static access method. */
+	static Kitchen* getInstance();
+
 	void SetRoomName(string Username) { UserKitchen = Username + "'s Kitchen"; };/*from Room.h*/
 	void SetRoomName() { UserKitchen = Username + "'s Kitchen"; };
 	
