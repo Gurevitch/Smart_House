@@ -1,8 +1,21 @@
 #include "Room.h"
 
-string Room::LightConverter(bool LightMode)
+void Room::SwitchLightMode()
 {
-    if (LightMode)
-        return "turn on";
-    return "turn off";   
+    m_isLightOn = !m_isLightOn;
+}
+//
+//void Room::SetHouse(House house)
+//{
+//    this->m_house = house;
+//}
+
+void Room::AddItemToList(ElectricityItem elecitem)
+{
+    m_electricityitems[typeid(elecitem).name()] = elecitem;
+}
+
+template <typename T> T Room::GetItem()
+{
+    return m_electricityitems[typeid(T).name()];
 }

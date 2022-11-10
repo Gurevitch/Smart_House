@@ -3,33 +3,23 @@
 #include <string>
 #include <vector>
 
-class LivingRoom:public Room
+class LivingRoom:public Room,public ElectricityItem
 {
 private:
 	string UserLivingroom;
 
 	bool TVstatus = false;
 	short TVchannel;
-	const short LivingRoomFloor = 2;
-	bool LivRoomLight = false;
-	/* Here will be the instance stored. */
-	static LivingRoom* instance;
-
-	/* Private constructor to prevent instancing. */
-	LivingRoom();
+	//const short LivingRoomFloor = 2;
+	map<string, int> m_TVChannels;
 
 public:
-
-	/* Static access method. */
-	static LivingRoom* getInstance();
-
-	//LivingRoom(string _Username) { UserLivingroom = _Username + "'s Living Room"; };
-	void SetRoomName(string Username) { UserLivingroom = Username + "'s Kitchen"; };/*from Room.h*/
-	void SetRoomName() { UserLivingroom = Username + "'s Kitchen"; };
-	void SetLightMode(bool LightMode) { LivRoomLight = LightMode; };
-	bool SwitchTheLight(bool LightMode);
 	void ChooseChannel(short TvChannel);
 	void ChangeTVMode(bool TVchannel);
+	void TvChannels();
+	void AddChannel(string name, int channel);
+	void ActionOfTheItems();
+
 
 };
 

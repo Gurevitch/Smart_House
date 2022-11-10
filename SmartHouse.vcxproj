@@ -139,8 +139,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ElectricityItemInterface.cpp" />
     <ClCompile Include="Elevator.cpp" />
     <ClCompile Include="FrontDoor.cpp" />
+    <ClCompile Include="House.cpp" />
     <ClCompile Include="Kitchen.cpp" />
     <ClCompile Include="LivingRoom.cpp" />
     <ClCompile Include="Room.cpp" />
@@ -148,8 +150,8 @@
     <ClCompile Include="Timer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ElectricityItemInterface.h" />
     <ClInclude Include="Elevator.h" />
-    <ClInclude Include="Enum.h" />
     <ClInclude Include="FrontDoor.h" />
     <ClInclude Include="House.h" />
     <ClInclude Include="Kitchen.h" />

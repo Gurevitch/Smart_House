@@ -36,6 +36,12 @@
     <ClCompile Include="LivingRoom.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="House.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ElectricityItemInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Room.h">
@@ -59,7 +65,7 @@
     <ClInclude Include="LivingRoom.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Enum.h">
+    <ClInclude Include="ElectricityItemInterface.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

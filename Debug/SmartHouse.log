@@ -1,2 +1,5 @@
-﻿  SmartHouse.cpp
+﻿  LivingRoom.cpp
+C:\Users\Roii\source\repos\SmartHouse\SmartHouse\LivingRoom.cpp(40,16): warning C4018: '<': signed/unsigned mismatch
+  SmartHouse.cpp
+  Generating Code...
   SmartHouse.vcxproj -> C:\Users\Roii\source\repos\SmartHouse\Debug\SmartHouse.exe

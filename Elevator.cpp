@@ -19,7 +19,6 @@ Elevator* Elevator::getInstance()
 	return instance;
 }
 
-
 void Elevator::GetFloor(short floor)
 {
 	bool status;
@@ -30,6 +29,7 @@ void Elevator::GetFloor(short floor)
 		CallElevator(floor, 1);
 		
 }
+
 void Elevator::CallElevator(short Elevatorfloor,short Roomfloor)
 {
 	try {

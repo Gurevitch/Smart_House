@@ -1,24 +1,29 @@
 #pragma once
 #include <string.h>
+#include <map>
 #include <iostream>
-#include "House.h"
+//#include "House.h"
+#include "ElectricityItemInterface.h"
 using namespace std;
 
-class Room:public House
+
+class Room
 {
 private:
-	bool LightMode=false;
-
+	bool   m_isLightOn=false;
+	short  m_floor;
+	string m_roomName;
+	map<string ,ElectricityItem> m_electricityitems;
 public:
-	
-	string Username;
-	Room()
-	{
-		LightMode = false;
-	}
-	virtual void SetRoomName(string Username) = 0;
-	virtual void SetLightMode(bool LightMode) = 0;
 
-	string LightConverter(bool LightMode);
+	Room(short floor,string name) 
+	{
+		this->m_floor = floor;
+		this->m_roomName = name;
+	};
+	void SwitchLightMode();
+	//void SetHouse(House house);
+	void AddItemToList(ElectricityItem elecitem);
+	template <typename T> T GetItem();
 };
 
